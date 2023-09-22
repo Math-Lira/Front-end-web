@@ -1,0 +1,109 @@
+            <div className={styles.content2}>
+              <strong>Usuario</strong>
+            </div>
+            <div className={styles.content3}>
+              <strong>Senha</strong>
+            </div>
+
+==================================ESTAVA NO LOGIN.TSX===================================================
+
+    <div>
+      {/* <Header /> */}
+
+      <div className={styles.wrapper}>
+        {/* <Sidebar /> */}
+        <main>
+          <article className={styles.article}>
+            <div className={styles.content1}>
+              <strong>Login</strong>
+            </div>
+            <div>
+              <footer>
+                <a href="#"><House size={20} />Login</a>
+                <a href="#"><House size={20} />Cadastrar</a>
+              </footer>
+            </div>
+          </article>
+        </main>
+      </div>
+      <div className='container'>
+          <img src={logo} alt="logo-moto" className='logo' />
+          
+      </div>
+    </div>
+
+==================================login.module.css===================================================
+
+.wrapper {
+  max-width: 70rem;
+  margin: -1rem auto;
+  padding: 0 18rem;
+
+  display: grid;
+  grid-template-columns: 565px;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.article {
+  background: var(--gray-300);
+  border-radius: 10px;
+  padding: 2.5rem;
+  height: 850px;
+}
+
+.content1 {
+  line-height: 30;
+  color: var(--gray-900);
+  margin-top: 1.5rem;
+}
+
+.content2{
+  line-height: 10;
+  color: var(--gray-900);
+  margin-top: 1.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  height: auto;
+  width: 100px;
+  left: 100px;
+}
+
+footer a {
+  width: 100%;
+  background: transparent;
+  color: var(--gray-100);
+  border: 1px solid var(--gray-100);
+  border-radius: 30px;
+  height: 50px;
+  padding: 0 1rem;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  transition: color 0.1s, background-color 0.1s;
+}

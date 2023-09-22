@@ -1,0 +1,73 @@
+.wrapper {
+  max-width: 70rem;
+  margin: -1rem auto;
+  padding: 0 18rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+.article {
+  background: var(--gray-300);
+  border-radius: 0px;
+  padding: 0rem;
+  height: 830px;
+}
+
+.logo {
+  position: absolute;
+  top: 50px;
+  right: 810px;
+  height: auto;
+  width: 100px;
+}
+
+.titulo {
+  text-align: center;
+  margin-top: -570px;
+  margin-right: 25px;
+}
+
+.wrapper::before {
+  content: "";
+  background-image: url("../../assets/imagem-de-fundo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.botaoLogin {
+  width: 100%;
+  background: var(--gray-100);
+  color: var(--gray-300);
+  border-radius: 10px;
+  height: 50px;
+  padding: 0 3rem;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+  max-width: 200px;
+}
+
+.botaoSenha {
+  width: 100%;
+  background: var(--gray-100);
+  color: var(--gray-300);
+  border-radius: 10px;
+  height: 50px;
+  padding: 0 3rem;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+  max-width: 200px;
+}
