@@ -1,6 +1,6 @@
 .formulario {
     position: relative;
-    max-width: 800%; /* Defina a largura máxima desejada */
+    max-width: 800%;
     margin: 0 auto; 
   }
   
@@ -11,11 +11,14 @@
   }
   
   .input {
-    margin-top: 15px;
+    margin-top: 3.5%;
     width: 105%;
-    color: var(--gray-100);
-    border-radius: 15px;
-    height: 50px;
+    color: var(--gray-700);
+    border: 2px solid var(--gray-300);
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    border-radius: 2rem;
+    height: 3rem;
     padding: 0 1.5rem;
     font-weight: bold;
     display: block;
@@ -27,13 +30,17 @@
     transition: color 0.1s, background-color 0.1s;
   }
 
+  .input::placeholder {
+    color: var(--gray-300);
+  }
+
 .botaoproximo {
     position: absolute;
     top: 103%;
     left: 42.2%;
     width: 15%;
     color: var(--gray-300);
-    background-color: var(--gray-100);
+    background-color: var(--gray-800);
     border-radius: 15px;
     height: 50px;
     padding: 0 1rem;
@@ -41,6 +48,12 @@
     display: block;
     text-decoration: none;
     margin-bottom: 20px;
+    transition: background-color 0.2s;
+    border: none;
+}
+
+.botaoproximo:hover {
+  background-color: var(--gray-100); /* Defina a cor desejada quando o mouse passa por cima */
 }
 
 .botaovoltar {
@@ -49,7 +62,7 @@
     left: 42.2%;
     width: 15%;
     color: var(--gray-300);
-    background-color: var(--gray-100);
+    background-color: var(--gray-800);
     border-radius: 15px;
     height: 50px;
     padding: 0 1rem;
@@ -57,4 +70,10 @@
     display: block;
     text-decoration: none;
     margin-bottom: 20px;
+    transition: background-color 0.2s;
+    border: none; 
+}
+
+.botaovoltar:hover {
+  background-color: var(--gray-100); /* Defina a cor desejada quando o mouse passa por cima */
 }

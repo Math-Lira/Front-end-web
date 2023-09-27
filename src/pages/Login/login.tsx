@@ -1,5 +1,5 @@
 import { FormLogin } from "../../components/FormLogin/index";
-import logo from "../../assets/logo-motos.png";
+import logo from "../../assets/Logo2.png";
 import styles from "./login.module.css";
 
 import "../../global.css";

@@ -1,5 +1,5 @@
 import styles from './cadastro.module.css'
-import logo from "../../assets/logo-motos.png";
+import logo from "../../assets/Logo2.png";
 import { FormCadastro } from '../../components/FormCadastro/index'
 
 export function Cadastro() {

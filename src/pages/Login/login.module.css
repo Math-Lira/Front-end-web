@@ -11,32 +11,32 @@
 }
 
 .article {
-  margin-top: 50px;
-  background: var(--gray-600);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
+  margin-top: 10%;
+  backdrop-filter: blur(20px);
+  border-radius: 7%;
   padding: 0rem;
   height: 730px;
-  border: 1px solid var(--gray-900);
+  border: 1px solid var(--gray-300);
 }
 
 .logo {
   position: absolute;
   top: 8%;
-  right: 40%;
+  right: 5.5%;
   height: auto;
-  width: 100px;
+  width: 90%;
 }
 
 .tituloH1 {
   position: relative;
   text-align: center;
   margin-top: -31%;
+  color: var(--gray-300);
 }
 
 .wrapper::before {
   content: "";
-  background-image: url("../../assets/fundo2.png");
+  background-image: url("../../assets/fundo1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: fixed;
@@ -45,32 +45,4 @@
   right: 0;
   bottom: 0;
   z-index: -1;
-}
-
-.botaoLogin {
-  width: 100%;
-  background: var(--gray-100);
-  color: var(--gray-300);
-  border-radius: 10px;
-  height: 50px;
-  padding: 0 3rem;
-  font-weight: bold;
-  display: block;
-  text-decoration: none;
-  margin-bottom: 20px;
-  max-width: 200px;
-}
-
-.botaoSenha {
-  width: 100%;
-  background: var(--gray-100);
-  color: var(--gray-300);
-  border-radius: 10px;
-  height: 50px;
-  padding: 0 3rem;
-  font-weight: bold;
-  display: block;
-  text-decoration: none;
-  margin-bottom: 20px;
-  max-width: 200px;
 }

@@ -1,6 +1,9 @@
 import { FazendoLogin } from "../FormLogin/formulario-login/index";
 import styles from './FormLogin.module.css';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLock } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 type Usuarios = {
     nomeUsuario: string;
@@ -33,7 +36,7 @@ export function FormLogin() {
             <form onSubmit={handleNovoCadastro}>
             <input 
                 className={styles.caixadetextousuario}
-                placeholder="Usuario"
+                placeholder="Usuário"
                 name="logins"
                 value={novousuario}
                 onChange={handleNovoLoginDeclarativo}
@@ -43,6 +46,12 @@ export function FormLogin() {
                 placeholder="Senha"
                 name="senhas"
                 />
+            <div className={styles.iconuser}>
+                <FontAwesomeIcon icon={faUser}/>
+            </div>
+            <div className={styles.iconcadeado}>
+                <FontAwesomeIcon icon={faLock}/>
+            </div>
             <button type="submit" className={styles.botaologin}>ENTRAR</button>
             <button type="button" className={styles.botaocadastrar}>CADASTRAR</button>
         </form>
