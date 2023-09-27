@@ -1,0 +1,60 @@
+.formulario {
+    position: relative;
+    max-width: 800%; /* Defina a largura máxima desejada */
+    margin: 0 auto; 
+  }
+  
+  .inputGroup {
+    position: relative;
+    left: 36.5%;
+    width: 26%;
+  }
+  
+  .input {
+    margin-top: 15px;
+    width: 105%;
+    color: var(--gray-100);
+    border-radius: 15px;
+    height: 50px;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.1s, background-color 0.1s;
+  }
+
+.botaoproximo {
+    position: absolute;
+    top: 103%;
+    left: 42.2%;
+    width: 15%;
+    color: var(--gray-300);
+    background-color: var(--gray-100);
+    border-radius: 15px;
+    height: 50px;
+    padding: 0 1rem;
+    font-weight: 800;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.botaovoltar {
+    position: absolute;
+    top: 115%;
+    left: 42.2%;
+    width: 15%;
+    color: var(--gray-300);
+    background-color: var(--gray-100);
+    border-radius: 15px;
+    height: 50px;
+    padding: 0 1rem;
+    font-weight: 800;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+}

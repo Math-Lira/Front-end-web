@@ -1,0 +1,79 @@
+.caixadetextousuario {
+  position: absolute;
+  border: 2px solid var(--gray-900);
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 43%;
+  left: 680px;
+  width: 20%;
+  color: var(--gray-900);
+  border-radius: 15px;
+  height: 50px;
+  padding: 0 1.5rem;
+  font-weight: bolder;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.caixadetestosenha {
+  position: absolute;
+  border: 2px solid var(--gray-900);
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 52%;
+  left: 680px;
+  width: 20%;
+  color: var(--gray-900);
+  border-radius: 15px;
+  height: 50px;
+  padding: 0 1.5rem;
+  font-weight: bolder;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.botaologin {
+  position: absolute;
+  top: 72%;
+  left: 720px;
+  width: 15%;
+  color: var(--gray-300);
+  background-color: var(--gray-100);
+  border-radius: 15px;
+  height: 50px;
+  padding: 0 1rem;
+  font-weight: 800;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.botaocadastrar {
+  position: absolute;
+  top: 80%;
+  left: 720px;
+  width: 15%;
+  color: var(--gray-300);
+  background-color: var(--gray-100);
+  border-radius: 15px;
+  height: 50px;
+  padding: 0 1rem;
+  font-weight: 800;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+}

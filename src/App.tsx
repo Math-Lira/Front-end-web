@@ -1,11 +1,12 @@
 import { Login } from './pages/Login/login';
-import { NovoUsuario } from './pages/novo-usuario/novo-usuario';
+import { Cadastro } from './pages/Cadastro/cadastro'
 import './global.css';
 
 export function App() {
   return (
     <div>
-      <Login />
+      <Login/>
+      {/* <Cadastro/> */}
     </div>
   )
 }

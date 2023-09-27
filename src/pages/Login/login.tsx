@@ -1,6 +1,5 @@
-import { House, UserPlus, Warning } from "phosphor-react";
+import { FormLogin } from "../../components/FormLogin/index";
 import logo from "../../assets/logo-motos.png";
-import fundo from "../../assets/imagem-de-fundo.png";
 import styles from "./login.module.css";
 
 import "../../global.css";
@@ -15,11 +14,10 @@ export function Login() {
           </div>
         </div>
       </div>
-      <main className={styles.titulo}>
-        <h1>LOGIN</h1>
-      </main>
-      <button className={styles.botaoLogin}>Login</button>
-      <button className={styles.botaoSenha}>Senha</button>
+      <div className={styles.titulo}>
+        <h1 className={styles.tituloH1}>LOGIN</h1>
+      </div>
+      <FormLogin />
     </div>
   );
 }
