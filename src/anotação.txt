@@ -107,3 +107,189 @@ footer a {
 
   transition: color 0.1s, background-color 0.1s;
 }
+
+  const [checkboxSelecionado, setCheckboxSelecionado] = useState(null);
+  const [numero, setNumero] = useState<number | null>(null);
+
+  const handleCheckboxChange = (numero: number) => {
+    if (checkboxSelecionado === numero) {
+      // Se o checkbox selecionado for clicado novamente, desmarque-o
+      setCheckboxSelecionado(null);
+    } else {
+      // Caso contrário, marque o novo checkbox
+      setNumero(numero)
+    }
+  }
+
+      <div
+        className={`${styles.checkboxContainer} ${
+          checkboxSelecionado === 1 ? 'checked' : 'unchecked'
+        }`}
+        onClick={() => handleCheckboxChange(1)}
+      >
+        <FontAwesomeIcon
+          icon={checkboxSelecionado === 1 ? faCheckCircle : faCircle}
+          style={{
+            fontSize: '24px',
+            verticalAlign: 'middle',
+            color: checkboxSelecionado === 1 ? '#00b981' : '#00b981'
+          }}
+        />
+        <span
+          className={styles.nomecheck}
+          style={{ verticalAlign: 'middle', fontSize: '18px' }}
+        >
+          Plano Prata
+        </span>
+      </div>
+
+      <div
+        className={`${styles.checkboxContainer2} ${
+          checkboxSelecionado === 2 ? 'checked' : 'unchecked'
+        }`}
+        onClick={() => handleCheckboxChange(2)}
+      >
+        <FontAwesomeIcon
+          icon={checkboxSelecionado === 2 ? faCheckCircle : faCircle}
+          style={{
+            fontSize: '24px',
+            verticalAlign: 'middle',
+            color: checkboxSelecionado === 2 ? '#00b981' : '#00b981'
+          }}
+        />
+        <span
+          className={styles.nomecheck2}
+          style={{ verticalAlign: 'middle', fontSize: '18px' }}
+        >
+          Plano Gold
+        </span>
+      </div>
+
+      <div
+        className={`${styles.checkboxContainer3} ${
+          checkboxSelecionado === 3 ? 'checked' : 'unchecked'
+        }`}
+        onClick={() => handleCheckboxChange(3)}
+      >
+        <FontAwesomeIcon
+          icon={checkboxSelecionado === 3 ? faCheckCircle : faCircle}
+          style={{
+            fontSize: '24px',
+            verticalAlign: 'middle',
+            color: checkboxSelecionado === 3 ? '#00b981' : '#00b981'
+          }}
+        />
+        <span
+          className={styles.nomecheck3}
+          style={{ verticalAlign: 'middle', fontSize: '18px' }}
+        >
+          Plano Diamante
+        </span>
+      </div>
+
+.formulario {
+  position: relative;
+  max-width: 800%;
+  margin: 0 auto; 
+}
+
+.inputGroup {
+  position: relative;
+  left: 36.5%;
+  width: 26%;
+}
+
+.input {
+  margin-top: 3.5%;
+  width: 105%;
+  color: var(--gray-700);
+  border: 2px solid var(--gray-300);
+  backdrop-filter: blur(20px);
+  background-color: transparent;
+  border-radius: 2rem;
+  height: 3rem;
+  padding: 0 1.5rem;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.input::placeholder {
+  color: var(--gray-300);
+}
+
+.botaoFinalizar {
+  position: absolute;
+  top: 119%;
+  left: 42.2%;
+  width: 15%;
+  color: var(--gray-300);
+  background-color: var(--gray-800);
+  border-radius: 15px;
+  height: 50px;
+  padding: 0 1rem;
+  font-weight: 800;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: background-color 0.2s;
+  border: none;
+}
+
+.botaoFinalizar:hover {
+background-color: var(--gray-100); /* Defina a cor desejada quando o mouse passa por cima */
+}
+
+.botaovoltar {
+  position: absolute;
+  top: 133%;
+  left: 42.2%;
+  width: 15%;
+  color: var(--gray-300);
+  background-color: var(--gray-800);
+  border-radius: 15px;
+  height: 50px;
+  padding: 0 1rem;
+  font-weight: 800;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: background-color 0.2s;
+  border: none; 
+}
+
+.botaovoltar:hover {
+background-color: var(--gray-100); /* Defina a cor desejada quando o mouse passa por cima */
+}
+
+.checkboxContainer {
+position: absolute;
+left: 37.2%;
+top: 107%;
+}
+.nomecheck {
+color: var(--gray-300);
+}
+
+.checkboxContainer2 {
+position: absolute;
+left: 46%;
+top: 107%;
+}
+.nomecheck2 {
+color: var(--gray-300);
+}
+
+.checkboxContainer3 {
+position: absolute;
+left: 54%;
+top: 107%;
+}
+.nomecheck3 {
+color: var(--gray-300);
+}

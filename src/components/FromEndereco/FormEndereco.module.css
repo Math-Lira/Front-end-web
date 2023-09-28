@@ -1,0 +1,126 @@
+@media screen and (min-width: 768px) {
+
+.formulario {
+  max-width: 100%; /* Largura máxima será o tamanho do contêiner pai */
+  padding: 1rem; /* Adiciona um espaçamento interno */
+  box-sizing: border-box;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  left: 36.5%;
+  width: 26%;
+}
+
+.input {
+  width: 100%;
+  max-width: 400px;
+  margin: 0.5rem 0; /* Espaçamento vertical e horizontal */
+  color: var(--gray-700);
+  border: 2px solid var(--gray-300);
+  backdrop-filter: blur(20px);
+  background-color: transparent;
+  border-radius: 2rem;
+  padding: 0 1.5rem;
+  height: 3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.input::placeholder {
+  color: var(--gray-300);
+}
+
+}
+
+.botaoFinalizar {
+  position: relative;
+  margin-top: 3.5%;
+  left: 42.2%;
+  width: 15%;
+  color: var(--gray-300);
+  background-color: var(--gray-800);
+  border-radius: 15px;
+  height: 50px;
+  padding: 0 1rem;
+  font-weight: 800;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: background-color 0.2s;
+  border: none;
+}
+
+.botaoFinalizar:hover {
+background-color: var(--gray-100); /* Defina a cor desejada quando o mouse passa por cima */
+}
+
+.botaovoltar {
+  position: relative;
+  margin-top: -0.5%;
+  left: 42.2%;
+  width: 15%;
+  color: var(--gray-300);
+  background-color: var(--gray-800);
+  border-radius: 15px;
+  height: 50px;
+  padding: 0 1rem;
+  font-weight: 800;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: background-color 0.2s;
+  border: none; 
+}
+
+.botaovoltar:hover {
+background-color: var(--gray-100); /* Defina a cor desejada quando o mouse passa por cima */
+}
+
+.checkboxContainer {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1%; /* Espaçamento entre os elementos */
+  margin-top: -21%;
+  margin-left: 100%;
+  z-index: 2;
+}
+
+.nomecheck {
+  color: var(--gray-300);
+}
+
+.checkboxContainer2 {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2%; /* Espaçamento entre os elementos */
+  margin-top: -21%;
+  margin-left: 10%;
+  z-index: 2;
+}
+
+.nomecheck2 {
+  color: var(--gray-300);
+}
+
+.checkboxContainer3 {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1%; /* Espaçamento entre os elementos */
+  margin-top: -21%;
+  z-index: 1;
+}
+
+.nomecheck3 {
+  color: var(--gray-300);
+}
