@@ -2,7 +2,7 @@
 
 .formulario {
   max-width: 100%; /* Largura máxima será o tamanho do contêiner pai */
-  padding: 1rem; /* Adiciona um espaçamento interno */
+  padding: 0rem; /* Adiciona um espaçamento interno */
   box-sizing: border-box;
 }
 
@@ -84,13 +84,12 @@ background-color: var(--gray-100); /* Defina a cor desejada quando o mouse passa
 background-color: var(--gray-100); /* Defina a cor desejada quando o mouse passa por cima */
 }
 
-.checkboxContainer {
+.checkboxContainer1 {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 1%; /* Espaçamento entre os elementos */
   margin-top: -21%;
-  margin-left: 100%;
+  margin-left: 37%;
   z-index: 2;
 }
 
@@ -102,9 +101,10 @@ background-color: var(--gray-100); /* Defina a cor desejada quando o mouse passa
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 2%; /* Espaçamento entre os elementos */
+  margin-right: -8%;
   margin-top: -21%;
-  margin-left: 10%;
+  margin-left: 1.5%;
+
   z-index: 2;
 }
 
@@ -116,8 +116,8 @@ background-color: var(--gray-100); /* Defina a cor desejada quando o mouse passa
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 1%; /* Espaçamento entre os elementos */
   margin-top: -21%;
+  margin-left: 9.5%;
   z-index: 1;
 }
 

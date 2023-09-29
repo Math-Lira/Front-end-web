@@ -13,6 +13,7 @@
 .article {
   margin-top: 2.8%;
   backdrop-filter: blur(20px);
+  border-radius: 7%;
   padding: 0rem;
   height: 814px;
   border: 1px solid var(--gray-300);
@@ -31,7 +32,7 @@
     text-align: center;
     margin-top: -40.5%;
     margin-right: 5px;
-    color: var(--gray-700);
+    color: var(--gray-300);
   }
   
   .wrapper::before {

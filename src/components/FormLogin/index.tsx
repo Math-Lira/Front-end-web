@@ -34,6 +34,7 @@ export function FormLogin() {
       return (
         <div>
             <form onSubmit={handleNovoCadastro}>
+              <a className={styles.esqueciasenha} href="/pagina-do-link"> ESQUECI A SENHA</a> {/* Adicione o link aqui */}
             <input 
                 className={styles.caixadetextousuario}
                 placeholder="Usuário"
